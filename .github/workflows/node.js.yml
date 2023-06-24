@@ -29,7 +29,8 @@ jobs:
     - run: npm i
     
     - run: npx cypress run --env allure=true
-    - run: allure generate
+    
+    - run: npm run test
     
     
     - name: Upload a Build Artifact
