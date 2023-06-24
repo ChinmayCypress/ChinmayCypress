@@ -1,0 +1,34 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "test framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "allure generate"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/Features/Steps/*.js"
+  },
+  "json": {
+    "enabled": true,
+    "output": "output/cucumber-report.json",
+    "filePrefix": "cucumber-",
+    "fileSuffix": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.11.0",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.22.4",
+    "cucumber-html-reporter": "^7.1.0",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  }
+}
