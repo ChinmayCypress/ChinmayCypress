@@ -1,0 +1,6 @@
+{
+    "e2e": {
+      "stepDefintions": "cypress/e2e/Features/**/.{js,mjs,ts,tsx}"
+    }
+   
+  }
