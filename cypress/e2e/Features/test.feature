@@ -11,7 +11,7 @@ Feature: Calculation of two  number
     # And user verify title
 
 
-
+    @smoke
     Scenario: Substration of two number
         When I visit "https://calculator.net"
         And I click on "1"

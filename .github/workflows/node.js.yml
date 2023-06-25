@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm i
     
-    - run: npx cypress run --env allure=true
+    - run: npx cypress run --env allure=true,TAGS=@smoke
     
     - run: npm run test
     
